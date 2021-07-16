@@ -1,64 +1,88 @@
-import {
-  NavDropdown,
-  Nav,
-  Button,
-  Form,
-  Navbar,
-  FormControl,
-} from "react-bootstrap";
-import { Link } from "react-router-dom";
+import React from "react";
+import { alpha, makeStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import IconButton from "@material-ui/core/IconButton";
+import Typography from "@material-ui/core/Typography";
+import InputBase from "@material-ui/core/InputBase";
+import Badge from "@material-ui/core/Badge";
+import MenuItem from "@material-ui/core/MenuItem";
+import Menu from "@material-ui/core/Menu";
+import MenuIcon from "@material-ui/icons/Menu";
+import SearchIcon from "@material-ui/icons/Search";
+import AccountCircle from "@material-ui/icons/AccountCircle";
+import MailIcon from "@material-ui/icons/Mail";
+import NotificationsIcon from "@material-ui/icons/Notifications";
+import MoreIcon from "@material-ui/icons/MoreVert";
 import Logo from "../assets/log.ico";
 
-function NavBarComponent() {
+import {  Nav, Navbar, Container } from "react-bootstrap";
+
+import styled from "styled-components";
+
+import { Link } from "react-router-dom";
+
+export default function PrimarySearchAppBar() {
   return (
-    
-    <Navbar
-      expand="lg"
-      className="position-fixed w-100 bg-light bg-gradient"
-      style={{ zIndex: 100, top:0 }}
-    >
-      <Link to="/">
-        {" "}
-        <Navbar.Brand href="#">
-          <img src={Logo} alt="logo" />
-        </Navbar.Brand>
-      </Link>
-      <Navbar.Toggle aria-controls="navbarScroll" />
-      <Navbar.Collapse id="navbarScroll">
-        <Nav
-          className="mr-auto my-2 my-lg-0"
-          style={{ maxHeight: "100px" }}
-          navbarScroll
-        >
-          <Nav.Link href="#action1">Início</Nav.Link>
-          <Nav.Link href="#action2"></Nav.Link>
-          <NavDropdown title="Produtos" id="navbarScrollingDropdown">
-            <NavDropdown.Item href="#action3">
-              <Link to="/Eletrodomestico">Eletrodomésticos</Link>
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action4">
-              <Link to="/informatica">Informática</Link>
-            </NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action5">
-              <Link to="/Moveis">Movéis</Link>
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action6">Ferramentas</NavDropdown.Item>
-          </NavDropdown>
-          <Nav.Link href="#">About</Nav.Link>
-        </Nav>
-        <Form className="d-flex">
-          <FormControl
-            type="search"
-            placeholder="Procurar"
-            className="mr-2"
-            aria-label="Search"
-          />
-          <Button variant="outline-success">Procurar</Button>
-        </Form>
-      </Navbar.Collapse>
-    </Navbar>
+    <NavbarTod>
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        bg="dark"
+        variant="dark"
+        className="position-fixed w-100 $z-index-sticky "
+      >
+        <Container>
+          <Navbar.Brand href="#home">
+            {" "}
+            <Link to="/">
+              <img src={Logo} />
+            </Link>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link>
+                <Link
+                  to="/Eletrodomestico"
+                  className="text-decoration-none text-light"
+                >
+                  Eletrodoméstico
+                </Link>
+              </Nav.Link>
+            </Nav>
+            <Nav>
+              <Nav.Link>
+                <Link
+                  to="/Informatica"
+                  className="text-decoration-none text-light"
+                >
+                  Informática
+                </Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link to="/Moveis" className="text-decoration-none text-light">
+                  Móveis
+                </Link>
+              </Nav.Link>
+            </Nav>
+            <Nav.Link>
+              <Link
+                to="/FerramentasLazer"
+                className="text-decoration-none text-light"
+              >
+                Ferramentas e Lazer
+              </Link>
+            </Nav.Link>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </NavbarTod>
   );
 }
 
-export default NavBarComponent;
+const NavbarTod = styled.div`
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+`;

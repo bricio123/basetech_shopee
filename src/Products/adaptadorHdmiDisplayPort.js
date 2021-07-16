@@ -9,12 +9,13 @@ function adapatadorHDMIDisplayPort() {
     <>
       <NavBarN />
       <Container>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdF1EP9_MqeUYXyJivsdCvxMASuEiOxVFh6TGyBEGTZBgo0-w/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdF1EP9_MqeUYXyJivsdCvxMASuEiOxVFh6TGyBEGTZBgo0-w/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </Container>
       <Footer />
     </>
   );
 }
+
 const Container = styled.div`
    margin-top: 5rem;
   display: flex;
