@@ -4,23 +4,23 @@ import NavBarN from "../components/Navbar";
 import Footer from "../components/Footer";
 import styled from "styled-components";
 
-function FoneLogitech() {
+function adapatadorHDMIDisplayPort() {
   return (
     <>
       <NavBarN />
       <Container>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScM4AOvHyic2eyBaMMRNySvGDpqYJXMbr7Lfgtw5_P3aL17yQ/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfhu5qZJS957Fcta9t3-ixwbK2kTEli2VvntBCCB5qaB9aS0g/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </Container>
       <Footer />
     </>
   );
 }
+
 const Container = styled.div`
-   margin-top: 5rem;
+  margin-top: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-
 
   iframe {
     display: flex;
@@ -29,4 +29,4 @@ const Container = styled.div`
   }
 `;
 
-export default FoneLogitech;
+export default adapatadorHDMIDisplayPort;

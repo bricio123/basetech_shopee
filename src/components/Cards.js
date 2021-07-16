@@ -48,7 +48,7 @@ function Cards() {
           <Card.Body>
             <Card.Title>Ferramentas e Lazer</Card.Title>
             <Card.Text>Temos certeza que aqui você vai encontrar.</Card.Text>
-          <Link to='/Eletrodomestico'> <Button variant="primary">Ver produtos</Button></Link>
+          <Link to='/FerramentasLazer'> <Button variant="primary">Ver produtos</Button></Link>
           </Card.Body>
         </Card>
       </ContainerA>
