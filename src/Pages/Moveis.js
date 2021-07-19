@@ -59,6 +59,11 @@ let CadeiraVermelha = {
   desc: "Cadeira Universitária Diretor Sky C/ Porta Livros ",
   
 }
+let CadeiraPresidente = {
+  src: "https://images-americanas.b2w.io/produtos/01/00/img/2431811/5/2431811577_1GG.jpg",
+  name: "Cadeira Presidente",
+  desc: "Cadeira Presidente Escritório Giratória com Braço 3D Assento Couro Ecológico  Preta",
+}
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -340,7 +345,46 @@ export default function ComplexGrid() {
             </Grid>
           </Grid>
         </Paper>
-       
+
+
+
+        <Paper className={classes.paper}>
+          <Grid container spacing={2}>
+            <Grid item>
+              <ButtonBase className={classes.image}>
+                <img
+                  className={classes.img}
+                  alt="complex"
+                  src={ CadeiraPresidente.src}
+                />
+              </ButtonBase>
+            </Grid>
+            <Grid item xs={12} sm container>
+              <Grid item xs container direction="column">
+                <Grid item xs spacing={5}>
+                  <Typography gutterBottom variant="subtitle1">
+                    { CadeiraPresidente.name}
+                  </Typography>
+                  <Typography variant="body2" gutterBottom>
+                    { CadeiraPresidente.desc}
+                  </Typography>
+                 
+                </Grid>
+                <Grid item>
+                  <Typography variant="body2" style={{ cursor: "pointer" }}>
+                    <Link to='/CadeiraPresidente'>
+                    <Button variant="contained" color="secondary">
+                      Ofertar
+                    </Button>
+                    </Link>
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Paper>
+
+        
       </ContainerItens>
     </div>
   );

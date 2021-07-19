@@ -122,7 +122,7 @@ let MouseC3 = {
 };
 
 let MouseMaxPrint = {
-  src: "https://http2.mlstatic.com/D_NQ_NP_735642-MLB46178227271_052021-O.webp",
+  src: "https://lh5.googleusercontent.com/CFiCPryAsQXiXQ3HB5NkWr7dmKb8xHJU6YpnGVGNdbEtInHcrONW_Jg5GYjyr4R4fosJnaIHZz4_iSH932oCEBcxrXMlt1Amq0smVdf5kAxwylJ0RJ3gYZIwnslq2Az8UQ=w392",
   name: "Mouse MaxPrint",
   desc: "Mouse Óptico Maxprint 1000dpi Usb Preto 60615-7",
 };
@@ -204,7 +204,31 @@ let WebCam = {
   name: "WebCam",
   desc: "Webcam Logitech C920 Hd Pro (Preto) Preto",
 };
-
+let impressoraMultifuncionalLaser ={
+  src: "https://images-americanas.b2w.io/produtos/01/00/img/1911318/4/1911318423_1SZ.jpg",
+  name: "Multifuncional Laser",
+  desc: "Multifuncional Laser Pro M428fdw Hp",
+}
+let Switch8Porta ={
+  src: "https://static.tp-link.com/LS1008G-01_large_1564562206436w.jpg",
+  name: "Switch Gigabit de Mesa com 8 portas",
+  desc: "8 Portas RJ45 de Autonegociação 10 100 1000Mbps",
+}
+let SuporteRodinha = {
+  src: "https://http2.mlstatic.com/D_NQ_NP_962264-MLB40373460828_012020-O.webp",
+  name: "Suporte Para Cpu",
+  desc: "Suporte Para Cpu Ajustável Original Novo C3 Tech",
+}
+let SuporteMadeira = {
+  src: "https://http2.mlstatic.com/D_NQ_NP_2X_750531-MLB31086037118_062019-F.webp",
+  name: "Suporte Para Monitor",
+  desc: "Suporte Para Monitor Stalo Triplo 9768 Preto",
+}
+let ImpressoraBrother = {
+  src: "https://images-submarino.b2w.io/produtos/01/00/img/1870319/8/1870319867_1SZ.jpg",
+  name: "Impressora Brother",
+  desc: "Impressora Digital Colorida Compacta Indicação: EmpresaTipo de Impressão",
+}
 
 
 const useStyles = makeStyles((theme) => ({
@@ -1485,7 +1509,212 @@ export default function ComplexGrid() {
           </Grid>
         </Paper>
 
+        <Paper className={classes.paper}>
+          <Grid container spacing={2}>
+            <Grid item>
+              <ButtonBase className={classes.image}>
+                <img className={classes.img} alt="complex" src={impressoraMultifuncionalLaser.src} />
+              </ButtonBase>
+            </Grid>
+            <Grid item xs={12} sm container>
+              <Grid item xs container direction="column">
+                <Grid item xs spacing={5}>
+                  <Typography gutterBottom variant="subtitle1">
+                    {impressoraMultifuncionalLaser.name}
+                  </Typography>
+                  <Typography variant="body2" gutterBottom>
+                    {impressoraMultifuncionalLaser.desc}
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <Typography variant="body2" style={{ cursor: "pointer" }}>
+                    <Link to='/ImpressoraMultilaser'>
+                    <Button variant="contained" color="secondary">
+                      Ofertar
+                    </Button>
+                    </Link>
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Paper>
 
+        <Paper className={classes.paper}>
+          <Grid container spacing={2}>
+            <Grid item>
+              <ButtonBase className={classes.image}>
+                <img
+                  className={classes.img}
+                  alt="complex"
+                  src={Switch8Porta.src}
+                />
+              </ButtonBase>
+            </Grid>
+            <Grid item xs={12} sm container>
+              <Grid item xs container direction="column">
+                <Grid item xs spacing={5}>
+                  <Typography gutterBottom variant="subtitle1">
+                    {Switch8Porta.name}
+                  </Typography>
+                  <Typography variant="body2" gutterBottom>
+                    {Switch8Porta.desc}
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <Typography variant="body2" style={{ cursor: "pointer" }}>
+                    <Link to="/Switch8Porta">
+                      <Button variant="contained" color="secondary">
+                        Ofertar
+                      </Button>
+                    </Link>
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Paper>
+
+        <Paper className={classes.paper}>
+          <Grid container spacing={2}>
+            <Grid item>
+              <ButtonBase className={classes.image}>
+                <img
+                  className={classes.img}
+                  alt="complex"
+                  src={SuporteRodinha.src}
+                />
+              </ButtonBase>
+            </Grid>
+            <Grid item xs={12} sm container>
+              <Grid item xs container direction="column">
+                <Grid item xs spacing={5}>
+                  <Typography gutterBottom variant="subtitle1">
+                    {SuporteRodinha.name}
+                  </Typography>
+                  <Typography variant="body2" gutterBottom>
+                    {SuporteRodinha.desc}
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <Typography variant="body2" style={{ cursor: "pointer" }}>
+                    <Link to="/SuporteCPU">
+                      <Button variant="contained" color="secondary">
+                        Ofertar
+                      </Button>
+                    </Link>
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Paper>
+        
+        <Paper className={classes.paper}>
+          <Grid container spacing={2}>
+            <Grid item>
+              <ButtonBase className={classes.image}>
+                <img
+                  className={classes.img}
+                  alt="complex"
+                  src={SuporteMadeira.src}
+                />
+              </ButtonBase>
+            </Grid>
+            <Grid item xs={12} sm container>
+              <Grid item xs container direction="column">
+                <Grid item xs spacing={5}>
+                  <Typography gutterBottom variant="subtitle1">
+                    {SuporteMadeira.name}
+                  </Typography>
+                  <Typography variant="body2" gutterBottom>
+                    {SuporteMadeira.desc}
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <Typography variant="body2" style={{ cursor: "pointer" }}>
+                    <Link to="/SuporteMadeira">
+                      <Button variant="contained" color="secondary">
+                        Ofertar
+                      </Button>
+                    </Link>
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Paper>
+
+
+        <Paper className={classes.paper}>
+          <Grid container spacing={2}>
+            <Grid item>
+              <ButtonBase className={classes.image}>
+                <img
+                  className={classes.img}
+                  alt="complex"
+                  src={SuporteMadeira.src}
+                />
+              </ButtonBase>
+            </Grid>
+            <Grid item xs={12} sm container>
+              <Grid item xs container direction="column">
+                <Grid item xs spacing={5}>
+                  <Typography gutterBottom variant="subtitle1">
+                    {SuporteMadeira.name}
+                  </Typography>
+                  <Typography variant="body2" gutterBottom>
+                    {SuporteMadeira.desc}
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <Typography variant="body2" style={{ cursor: "pointer" }}>
+                    <Link to="/SuporteMadeira">
+                      <Button variant="contained" color="secondary">
+                        Ofertar
+                      </Button>
+                    </Link>
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Paper>
+
+        <Paper className={classes.paper}>
+          <Grid container spacing={2}>
+            <Grid item>
+              <ButtonBase className={classes.image}>
+                <img
+                  className={classes.img}
+                  alt="complex"
+                  src={ImpressoraBrother.src}
+                />
+              </ButtonBase>
+            </Grid>
+            <Grid item xs={12} sm container>
+              <Grid item xs container direction="column">
+                <Grid item xs spacing={5}>
+                  <Typography gutterBottom variant="subtitle1">
+                    {ImpressoraBrother.name}
+                  </Typography>
+                  <Typography variant="body2" gutterBottom>
+                    {ImpressoraBrother.desc}
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <Typography variant="body2" style={{ cursor: "pointer" }}>
+                    <Link to="/ImpressoraBrother">
+                      <Button variant="contained" color="secondary">
+                        Ofertar
+                      </Button>
+                    </Link>
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Paper>
         
       </ContainerItens>
       <Footer />

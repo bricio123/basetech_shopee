@@ -9,14 +9,7 @@ function ImpressoraTT() {
     <>
       <NavBarN />
       <Container>
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSfsGkXWFFzAmVcYBPAnQ5Fl2OCfrigIUxAhm_KFHUSaDvaZkg/viewform?embedded=true"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-        >
-          Loading…
-        </iframe>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdNGn3Glvv0_5cbTUntaYnm69jxgBGZv0HKCP_6TodkHUeMkA/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
       </Container>
       <Footer />
     </>
@@ -31,7 +24,7 @@ const Container = styled.div`
 
   iframe {
     display: flex;
-    height: 1600px;
+    height: 1900px;
     width: 100%;
   }
 `;

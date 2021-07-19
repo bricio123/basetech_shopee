@@ -65,10 +65,13 @@ export default function PrimarySearchAppBar() {
                   Móveis
                 </Link>
               </Nav.Link>
+              <Nav.Link>
+                <Link to="/FerramentasLazer" className="text-decoration-none text-light">
+                  Ferramentas E Lazer
+                </Link>
+              </Nav.Link>
             </Nav>
-            <Nav.Link>
-              
-            </Nav.Link>
+           
           </Navbar.Collapse>
         </Container>
       </Navbar>

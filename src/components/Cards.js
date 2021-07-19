@@ -4,7 +4,7 @@ import { Card, Button } from "react-bootstrap";
 import Informatica from "../assets/informatica.webp";
 import Moveis from '../assets/moveis.webp';
 import Eletrodomesticos from '../assets/eletrodomestico.webp';
-import Ferramentas from '../assets/ferramentas.jpg'
+import Ferramentas from '../assets/Ferramentas.webp'
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
@@ -18,7 +18,7 @@ function Cards() {
           <Card.Img variant="top" src={Informatica} />
           <Card.Body>
             <Card.Title>Informática</Card.Title>
-            <Card.Text>Preços que cabem no seu bolso.</Card.Text>
+            <Card.Text>Compre agora mesmo o que você precisa.</Card.Text>
             <Link to='/Informatica'>
             <Button >Ver produtos</Button>
             </Link>
@@ -29,7 +29,7 @@ function Cards() {
           <Card.Img variant="top" src={Moveis} />
           <Card.Body>
             <Card.Title>Móveis</Card.Title>
-            <Card.Text>Não perca essa oportunidade de comprar seu movél</Card.Text>
+            <Card.Text>Não perca essa oportunidade.</Card.Text>
            <Link to='/Moveis'> <Button variant="primary">Ver produtos</Button></Link>
           </Card.Body>
         </Card>
@@ -41,9 +41,15 @@ function Cards() {
             <Card.Text>Com facilidade de pagamento.</Card.Text>
           <Link to='/Eletrodomestico'> <Button variant="primary">Ver produtos</Button></Link>
           </Card.Body>
-        </Card>
-
-       
+        </Card> 
+        <Card style={{ width: "18rem" }} className='m-5'    >
+          <Card.Img variant="top" src={Ferramentas} />
+          <Card.Body>
+            <Card.Title>Ferramentas E Lazer</Card.Title>
+            <Card.Text>Produtos novos e lindos para você, não perca.</Card.Text>
+          <Link to='/FerramentasLazer'> <Button variant="primary">Ver produtos</Button></Link>
+          </Card.Body>
+        </Card>       
       </ContainerA>
     </Group>
   );

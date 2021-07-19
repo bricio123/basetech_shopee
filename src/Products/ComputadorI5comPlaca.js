@@ -9,7 +9,14 @@ function ComputadorI5com() {
     <>
       <NavBarN />
       <Container>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdsDVjnD2NGy8LhgH2322wUfM9MgXoprG7p7BidmrRMssgFvQ/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdsDVjnD2NGy8LhgH2322wUfM9MgXoprG7p7BidmrRMssgFvQ/viewform?embedded=true"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        >
+          Loading…
+        </iframe>
       </Container>
       <Footer />
     </>
@@ -24,11 +31,9 @@ const Container = styled.div`
 
   iframe {
     display: flex;
-    height: 1600px;
+    height: 1900px;
     width: 100%;
   }
 `;
 
 export default ComputadorI5com;
-
-

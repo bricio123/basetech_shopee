@@ -16,15 +16,15 @@ function AdaptadorHDMIMicroHDMI() {
   );
 }
 const Container = styled.div`
-    margin-top: 5rem;
+  margin-top: 5rem;
   display: flex;
+  height:100%;
   justify-content: center;
   align-items: center;
-
-
+  
   iframe {
     display: flex;
-    height: 1300px;
+    height: 2350px;
     width: 100%;
   }
 `;

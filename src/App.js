@@ -59,9 +59,6 @@ import ComputadotAmd from "./Products/ComputadorAmd";
 import ImpressoraTT from './Products/ImpressoraTT';
 import Airpods from './Products/AirPods';
 import Webcam from './Products/webcam';
-
-
-//eletrodomesticos
 import AspiradorPo from './Products/Eletrodomestico/AspiradorPo';
 import MicroondasEletrolux from './Products/Eletrodomestico/MicoondasEletrolux';
 import TVtcl49 from './Products/Eletrodomestico/TVTCL49';
@@ -71,7 +68,21 @@ import TV32LG from './Products/Eletrodomestico/TV32LG';
 import VentiladorCadence from './Products/Eletrodomestico/VentiladorCadence';
 import MicroondasPanasonic from './Products/Eletrodomestico/MicroondasPanasonic';
 import LavadoraAltaPressão from './Products/Eletrodomestico/LavadoraAltaPressão';
-
+import CadeiraPresidente from './Products/Moveis/CadeiraPresidente';
+import Arcondicionado from './Products/Eletrodomestico/Arcondicionado';
+import ImpressoraMultilaser from './Products/ImpressoraMultlaser';
+import GeladeiraContinental from './Products/Eletrodomestico/GeladeiraContinental';
+import Chaleira from './Products/Eletrodomestico/ChaleiraEletrica';
+import Switch8Porta from './Products/Switch8Portas';
+import SuporteCPU from './Products/SuporteCPU';
+import SuporteMadeira from './Products/SuporteMadeira'
+import Ventilador from './Products/Eletrodomestico/VentiladorVentisol';
+import PurificarEletrolux from './Products/Eletrodomestico/PurificadorEletrolux';
+import ImpressoraBrother from "./Products/ImpressoraBrother";
+import CaixaFerramentas from './Products/Ferramentas/CaixaFerramentas';
+import FuradeiraParafusadeira from './Products/Ferramentas/Furadeira';
+import SacoPancadasVermelho from './Products/Ferramentas/SacoPancadasVermelho';
+import SacoPancadasPreto from './Products/Ferramentas/SacoPancadasPreto';
 
 function App() {
   return (
@@ -116,11 +127,12 @@ function App() {
         path="/AdpatadorMicroHdmiparatipoC"
         component={AdpatadorMicroHdmiparatipoC}
       />
-
       <Route path="/ApoioPé" component={ApoioPé} />
       <Route path="/sofa" component={sofa} />
       <Route path="/Purificador" component={Purificador} />
      
+
+
       <Route path="/CadeiraPlastica" component={CadeiraPlastica} />
       <Route path="/CadeiraGiratoria" component={CadeiraGiratoria} />
       <Route path="/CadeiraEscritorio" component={CadeiraEscritorio} />
@@ -137,6 +149,7 @@ function App() {
     
 
 
+
       <Route path="/AspiradorPo" component={ AspiradorPo} />
       <Route path="/MicroondasEletrolux" component={ MicroondasEletrolux} />
       <Route path="/TVtcl49" component={ TVtcl49} />
@@ -147,10 +160,22 @@ function App() {
       <Route path="/VentiladorCadence" component={VentiladorCadence} />
       <Route path="/MicroondasPanasonic" component={MicroondasPanasonic} />
       <Route path="/LavadoraAltaPressão" component={LavadoraAltaPressão} />
+      <Route path="/CadeiraPresidente" component={CadeiraPresidente} />
+      <Route path="/Arcondicionado" component={Arcondicionado} />
+      <Route path="/ImpressoraMultilaser" component={ImpressoraMultilaser} />
+      <Route path="/GeladeiraContinental" component={GeladeiraContinental} />
+      <Route path="/Chaleira" component={Chaleira} />
+      <Route path="/Switch8Porta" component={Switch8Porta} />
+      <Route path="/SuporteCPU" component={SuporteCPU} />
+      <Route path="/SuporteMadeira" component={SuporteMadeira} />
+      <Route path="/Ventilador" component={Ventilador} />
+      <Route path="/PurificarEletrolux" component={PurificarEletrolux} />
+      <Route path="/ImpressoraBrother" component={ImpressoraBrother} />
+      <Route path="/CaixaFerramentas" component={CaixaFerramentas} />
+      <Route path="/FuradeiraParafusadeira" component={FuradeiraParafusadeira} />
+      <Route path="/SacoPancadasVermelho" component={SacoPancadasVermelho} />
+      <Route path="/SacoPancadasPreto" component={SacoPancadasPreto} />
       
-      
-      
-     
     </BrowserRouter>
   );
 }
