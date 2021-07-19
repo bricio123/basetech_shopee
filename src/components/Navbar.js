@@ -67,12 +67,7 @@ export default function PrimarySearchAppBar() {
               </Nav.Link>
             </Nav>
             <Nav.Link>
-              <Link
-                to="/FerramentasLazer"
-                className="text-decoration-none text-light"
-              >
-                Ferramentas e Lazer
-              </Link>
+              
             </Nav.Link>
           </Navbar.Collapse>
         </Container>

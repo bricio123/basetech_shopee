@@ -198,8 +198,15 @@ let Airpod = {
   src: "https://a-static.mlcdn.com.br/618x463/airpods-com-estojo-de-recarga-apple/apple10/308401/5e13fd0c72470e5eaf2e1b2519f4787f.jpg",
   name: "AirPods",
   desc: "AirPods com Estojo de Recarga - Apple",
-  
-}
+};
+let WebCam = {
+  src: "https://m.media-amazon.com/images/I/71iNwni9TsL._AC_SL1500_.jpg",
+  name: "WebCam",
+  desc: "Webcam Logitech C920 Hd Pro (Preto) Preto",
+};
+
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -1236,9 +1243,11 @@ export default function ComplexGrid() {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2" style={{ cursor: "pointer" }}>
+                    <Link to='/ComputadorI5com'>
                     <Button variant="contained" color="secondary">
                       Ofertar
                     </Button>
+                    </Link>
                   </Typography>
                 </Grid>
               </Grid>
@@ -1269,9 +1278,11 @@ export default function ComplexGrid() {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2" style={{ cursor: "pointer" }}>
+                    <Link to='/Switch48'>
                     <Button variant="contained" color="secondary">
                       Ofertar
                     </Button>
+                    </Link>
                   </Typography>
                 </Grid>
               </Grid>
@@ -1302,9 +1313,11 @@ export default function ComplexGrid() {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2" style={{ cursor: "pointer" }}>
+                    <Link to='./NotebookI3'>
                     <Button variant="contained" color="secondary">
                       Ofertar
                     </Button>
+                    </Link>
                   </Typography>
                 </Grid>
               </Grid>
@@ -1331,9 +1344,11 @@ export default function ComplexGrid() {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2" style={{ cursor: "pointer" }}>
+                    <Link to='/ComputadtoI5sem'>
                     <Button variant="contained" color="secondary">
                       Ofertar
                     </Button>
+                    </Link>
                   </Typography>
                 </Grid>
               </Grid>
@@ -1360,9 +1375,11 @@ export default function ComplexGrid() {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2" style={{ cursor: "pointer" }}>
+                    <Link to='/ComputadotAmd'>
                     <Button variant="contained" color="secondary">
                       Ofertar
                     </Button>
+                    </Link>
                   </Typography>
                 </Grid>
               </Grid>
@@ -1393,9 +1410,12 @@ export default function ComplexGrid() {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2" style={{ cursor: "pointer" }}>
+                    <Link to='/ImpressoraTT'>
+
                     <Button variant="contained" color="secondary">
                       Ofertar
                     </Button>
+                    </Link>
                   </Typography>
                 </Grid>
               </Grid>
@@ -1407,28 +1427,26 @@ export default function ComplexGrid() {
           <Grid container spacing={2}>
             <Grid item>
               <ButtonBase className={classes.image}>
-                <img
-                  className={classes.img}
-                  alt="complex"
-                  src={ Airpod.src}
-                />
+                <img className={classes.img} alt="complex" src={Airpod.src} />
               </ButtonBase>
             </Grid>
             <Grid item xs={12} sm container>
               <Grid item xs container direction="column">
                 <Grid item xs spacing={5}>
                   <Typography gutterBottom variant="subtitle1">
-                    { Airpod.name}
+                    {Airpod.name}
                   </Typography>
                   <Typography variant="body2" gutterBottom>
-                    { Airpod.desc}
+                    {Airpod.desc}
                   </Typography>
                 </Grid>
                 <Grid item>
                   <Typography variant="body2" style={{ cursor: "pointer" }}>
+                    <Link to='/Airpods'>
                     <Button variant="contained" color="secondary">
                       Ofertar
                     </Button>
+                    </Link>
                   </Typography>
                 </Grid>
               </Grid>
@@ -1436,7 +1454,39 @@ export default function ComplexGrid() {
           </Grid>
         </Paper>
 
-       
+        <Paper className={classes.paper}>
+          <Grid container spacing={2}>
+            <Grid item>
+              <ButtonBase className={classes.image}>
+                <img className={classes.img} alt="complex" src={WebCam.src} />
+              </ButtonBase>
+            </Grid>
+            <Grid item xs={12} sm container>
+              <Grid item xs container direction="column">
+                <Grid item xs spacing={5}>
+                  <Typography gutterBottom variant="subtitle1">
+                    {WebCam.name}
+                  </Typography>
+                  <Typography variant="body2" gutterBottom>
+                    {WebCam.desc}
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <Typography variant="body2" style={{ cursor: "pointer" }}>
+                    <Link to='/Webcam'>
+                    <Button variant="contained" color="secondary">
+                      Ofertar
+                    </Button>
+                    </Link>
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Paper>
+
+
+        
       </ContainerItens>
       <Footer />
     </div>

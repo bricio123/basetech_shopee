@@ -1,15 +1,16 @@
+
 import React from "react";
 import { Modal, Button, Navbar } from "react-bootstrap";
 import NavBarN from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import styled from "styled-components";
 
-function DescansoPe() {
+function adapatadorHDMIDisplayPort() {
   return (
     <>
       <NavBarN />
       <Container>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9GBQpDlrKRtatS9MipvHLmAaMWb2Cb0dmz_kCdqGvuEW6Fg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc4Q80ALRgp5UDeLZjTmsV-NQuLt3Ojl8ET211UYiJngSRBFA/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </Container>
       <Footer />
     </>
@@ -29,4 +30,8 @@ const Container = styled.div`
   }
 `;
 
-export default DescansoPe;
+export default adapatadorHDMIDisplayPort;
+
+
+
+

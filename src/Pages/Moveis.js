@@ -17,17 +17,8 @@ let sofaHabitato = {
   name: "SOFÁ IBIZA DE CANTO",
   desc: "Espuma D-28, revestida por manta de fibra poliéster",
 };
-let Purificadoragua = {
-  src: "https://a-static.mlcdn.com.br/1500x1500/purificador-de-coluna-refrigerado-por-compressor-inox-libell-press-star/magazineluiza/200107100/9efe1f96b037b78205f4398bfb325822.jpg",
-  name: "Purificador",
-  desc: "Purificador de Coluna Refrigerado por Compressor - Inox Libell Press Star",
-};
 
-let GeladeiraEltrolux = {
-  src: "https://www.extra-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=588269079",
-  name: "Geladeira Eletrolux",
-  desc: "Refrigerador Electrolux Frost Free TF51X 2 Portas Inox – 433 Litros",
-};
+
 
 let CadeiraPlasticaBranca = {
   src: " https://cdn.leroymerlin.com.br/products/cadeira_plastico_vila_boa_vista__74x50cm_branco_87765860_e733_1800x1800.jpeg",
@@ -121,7 +112,7 @@ export default function ComplexGrid() {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2" style={{ cursor: "pointer" }}>
-                    <Link to="/MonitorDell">
+                    <Link to="/sofa">
                       <Button variant="contained" color="secondary">
                         Ofertar
                       </Button>
@@ -133,76 +124,8 @@ export default function ComplexGrid() {
           </Grid>
         </Paper>
 
-        <Paper className={classes.paper}>
-          <Grid container spacing={2}>
-            <Grid item>
-              <ButtonBase className={classes.image}>
-                <img
-                  className={classes.img}
-                  alt="complex"
-                  src={Purificadoragua.src}
-                />
-              </ButtonBase>
-            </Grid>
-            <Grid item xs={12} sm container>
-              <Grid item xs container direction="column">
-                <Grid item xs spacing={5}>
-                  <Typography gutterBottom variant="subtitle1">
-                    {Purificadoragua.name}
-                  </Typography>
-                  <Typography variant="body2" gutterBottom>
-                    {Purificadoragua.desc}
-                  </Typography>
-                </Grid>
-                <Grid item>
-                  <Typography variant="body2" style={{ cursor: "pointer" }}>
-                    <Link to="/MonitorDell">
-                      <Button variant="contained" color="secondary">
-                        Ofertar
-                      </Button>
-                    </Link>
-                  </Typography>
-                </Grid>
-              </Grid>
-            </Grid>
-          </Grid>
-        </Paper>
 
-        <Paper className={classes.paper}>
-          <Grid container spacing={2}>
-            <Grid item>
-              <ButtonBase className={classes.image}>
-                <img
-                  className={classes.img}
-                  alt="complex"
-                  src={GeladeiraEltrolux.src}
-                />
-              </ButtonBase>
-            </Grid>
-            <Grid item xs={12} sm container>
-              <Grid item xs container direction="column">
-                <Grid item xs spacing={5}>
-                  <Typography gutterBottom variant="subtitle1">
-                    {GeladeiraEltrolux.name}
-                  </Typography>
-                  <Typography variant="body2" gutterBottom>
-                    {GeladeiraEltrolux.desc}
-                  </Typography>
-                </Grid>
-                <Grid item>
-                  <Typography variant="body2" style={{ cursor: "pointer" }}>
-                    <Link to="/MonitorDell">
-                      <Button variant="contained" color="secondary">
-                        Ofertar
-                      </Button>
-                    </Link>
-                  </Typography>
-                </Grid>
-              </Grid>
-            </Grid>
-          </Grid>
-        </Paper>
-
+        
         <Paper className={classes.paper}>
           <Grid container spacing={2}>
             <Grid item>
@@ -226,7 +149,7 @@ export default function ComplexGrid() {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2" style={{ cursor: "pointer" }}>
-                    <Link to="/MonitorDell">
+                    <Link to="/CadeiraPlastica">
                       <Button variant="contained" color="secondary">
                         Ofertar
                       </Button>
@@ -261,7 +184,7 @@ export default function ComplexGrid() {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2" style={{ cursor: "pointer" }}>
-                    <Link to="/MonitorDell">
+                    <Link to="/CadeiraGiratoria">
                       <Button variant="contained" color="secondary">
                         Ofertar
                       </Button>
@@ -297,7 +220,7 @@ export default function ComplexGrid() {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2" style={{ cursor: "pointer" }}>
-                    <Link to="/MonitorDell">
+                    <Link to="/CadeiraGiratoriaCouro">
                       <Button variant="contained" color="secondary">
                         Ofertar
                       </Button>
@@ -334,7 +257,7 @@ export default function ComplexGrid() {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2" style={{ cursor: "pointer" }}>
-                    <Link to="/MonitorDell">
+                    <Link to="/CadeiraEscritorio">
                       <Button variant="contained" color="secondary">
                         Ofertar
                       </Button>
@@ -370,9 +293,11 @@ export default function ComplexGrid() {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2" style={{ cursor: "pointer" }}>
+                    <Link to="/ApoioPé">
                     <Button variant="contained" color="secondary">
                       Ofertar
                     </Button>
+                    </Link>
                   </Typography>
                 </Grid>
               </Grid>
@@ -404,9 +329,11 @@ export default function ComplexGrid() {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2" style={{ cursor: "pointer" }}>
+                    <Link to='/CadeiraUniversitaria'>
                     <Button variant="contained" color="secondary">
                       Ofertar
                     </Button>
+                    </Link>
                   </Typography>
                 </Grid>
               </Grid>

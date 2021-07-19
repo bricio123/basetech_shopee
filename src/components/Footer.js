@@ -8,7 +8,8 @@ function FooterCompo() {
   return (
       <div>
     <Footer>
-     <Link to='/' ><Image src={Logo} /></Link>
+     <Link to='/' >
+       <Image src={Logo} /></Link>
       <ContainerA>
         <Letter>
           <FirstText>
@@ -44,19 +45,23 @@ const Footer = styled.div`
   width: 100%;
   height: auto;
   background: #000;
+    
 
 `;
 const ContainerA = styled.div`
-  max-width: 1100px;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
   padding: 50px;
-  @media (max-width:1150px){
-      padding:20px;
+  @media (max-width:500px){
+     padding:10px;
+     
 
+    
   }
+ 
 `;
 const Image = styled.img`
   width: 50px;
@@ -74,11 +79,25 @@ const FirstText = styled.p`
   display: flex;
   flex-direction: column;
   color: #fff;
+ 
+  @media (max-width:500px){
+     margin:0;
+     h2{
+       font-size:18px;
+     }
+     span{
+       font-size:10px;
+       margin:5px;
+     }
+
+    
+  }
 `;
 const Paragraph = styled.div`
   width: 100% ;
   color: #fff;
   text-align:center;
+  margin-top:15px;
 
 `;
 

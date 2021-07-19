@@ -43,14 +43,7 @@ function Cards() {
           </Card.Body>
         </Card>
 
-        <Card style={{ width: "18rem" }} className='m-5'    >
-          <Card.Img variant="top" src={Ferramentas} />
-          <Card.Body>
-            <Card.Title>Ferramentas e Lazer</Card.Title>
-            <Card.Text>Temos certeza que aqui você vai encontrar.</Card.Text>
-          <Link to='/FerramentasLazer'> <Button variant="primary">Ver produtos</Button></Link>
-          </Card.Body>
-        </Card>
+       
       </ContainerA>
     </Group>
   );

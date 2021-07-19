@@ -4,12 +4,12 @@ import NavBarN from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import styled from "styled-components";
 
-function DescansoPe() {
+function adapatadorHDMIDisplayPort() {
   return (
     <>
       <NavBarN />
       <Container>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9GBQpDlrKRtatS9MipvHLmAaMWb2Cb0dmz_kCdqGvuEW6Fg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdXpn9RF39R1mHCNHVzsAp5AGh15xsq4sP39lBYAkNg9yk2Ew/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </Container>
       <Footer />
     </>
@@ -29,4 +29,6 @@ const Container = styled.div`
   }
 `;
 
-export default DescansoPe;
+export default adapatadorHDMIDisplayPort;
+
+

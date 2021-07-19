@@ -4,14 +4,13 @@ import NavBarN from "../components/Navbar";
 import Footer from "../components/Footer";
 import styled from "styled-components";
 
-function AdaptadotHDMIVGA() {
+function Switch48() {
   return (
     <>
       <NavBarN />
       <Container>
         <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSfeEws7nRMX5Msb_dSA6wtUxhwFyGOISchRnUH7k2LhK1jxOQ/viewform?embedded=true"
-          
+          src="https://docs.google.com/forms/d/e/1FAIpQLSc17IZcpB3KC9PbbbGNc8teAWsEijSHb79QRtTmQQW82iUUlA/viewform?embedded=true"
           frameborder="0"
           marginheight="0"
           marginwidth="0"
@@ -23,6 +22,7 @@ function AdaptadotHDMIVGA() {
     </>
   );
 }
+
 const Container = styled.div`
   margin-top: 5rem;
   display: flex;
@@ -31,9 +31,9 @@ const Container = styled.div`
 
   iframe {
     display: flex;
-    height: 1850px;
+    height: 1600px;
     width: 100%;
   }
 `;
 
-export default AdaptadotHDMIVGA;
+export default Switch48;
